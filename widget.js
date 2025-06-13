@@ -10,9 +10,10 @@ query Popups($filters: PopupFiltersInput) {
   }
 }`
 
-const baseUrl = "http://localhost:1337/graphql"
 ;(async function () {
   const popupId = document.currentScript.getAttribute("data-popup-id")
+  const baseUrl = document.currentScript.getAttribute("data-base-url")
+  if (!popupId || !baseUrl) return
   // Load Tailwind first
   if (!document.querySelector('script[src="https://cdn.tailwindcss.com"]')) {
     const tailwindScript = document.createElement("script")
