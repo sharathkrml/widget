@@ -1,0 +1,6 @@
+{
+  "html": "<div class='popup-box'>🎉 Join our loyalty program!</div>",
+  "inlineStyles": "position: fixed; bottom: 20px; right: 20px; background: white; padding: 20px; border-radius: 10px;",
+  "class": "shadow-lg",
+  "css": ".popup-box { font-family: sans-serif; font-size: 16px; }"
+}
