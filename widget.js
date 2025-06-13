@@ -3,7 +3,9 @@
   const popupId = script.getAttribute("data-popup-id")
   if (!popupId) return
 
-  const res = await fetch(`response.json`)
+  const res = await fetch(
+    `https://raw.githubusercontent.com/sharathkrml/widget/refs/heads/main/response.json`
+  )
   const config = await res.json()
 
   // Inject Alpine.js if not already available
